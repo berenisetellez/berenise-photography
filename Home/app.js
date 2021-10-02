@@ -18,7 +18,7 @@ close.addEventListener('click', () => {
 
 let currentImgIndex = 0
 
-const images = ['images/auckland.jpeg', 'images/harbourBridge.jpeg', 'images/flag.jpeg', 'images/dolphines.jpeg', 'images/pinkSheep.jpeg']
+const images = ['images/auckland.jpg', 'images/harbourBridge.jpg', 'images/flag.jpg', 'images/dolphines.jpg', 'images/pinkSheep.jpg']
 
 const mainImage = document.querySelector ('#mainImage')
 

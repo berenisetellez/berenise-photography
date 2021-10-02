@@ -3,28 +3,11 @@
     box-sizing: border-box
 }
 
+/* Header Section */
+
 header {
     height: 15%;
-    border: 2px solid blue;    
-}
-  
-main {
-    height: 75%;
-    border: 2px solid purple;
-}
-
-footer {
-    height: 10%;
-    border: 2px solid yellow;
-}
-
-h1 {
-    text-align: center;
-}
-  
-.container {
-    height: 100vh;
-    border: 2px solid hotpink;
+    border-bottom: 2px solid#A39D90;
 }
 
 /* Hamburger navigation */
@@ -49,137 +32,184 @@ h1 {
     right: 0;
     top: 0;
     opacity: 0;
-    overflow-y: scroll;
     padding: 15px 30px;
     transition: all 0.25s ease-in-out;
     transform: translateX(100%);
     z-index: 1;
+    display: none;
+    height: 85vh;
 }
 
 .menu-open {
     transform: translateX(0%);
     opacity: 1;
+    display: block;
 }
 
 .menu li, .menu li:focus, .menu li:visited {
     color: black;
     display: block;
-    font-size: 50px;
     margin: 25px;
     text-align: center;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
 
 .menu-close {
     background-color: white;
 }
 
+#logo {
+    height: 100px;
+    width: 130px;
+    padding: 8px;
+}
+
+/* Body Section */
+  
+main {
+    height: 75%;
+    max-width: 1000px;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.container {
+    height: 100vh;
+}
+
+footer {
+    height: 10%;
+}
+
 /* Images Section */
 
 .sub-container {
-    height: 500px;
-    border: 2px solid yellow;
+    height: 360px;
 }
 
 #flag {
-    background-image: url(../Australia/Images/flag.jpeg);
-    background-size: cover;
-    border: 2px solid paleturquoise;
-    overflow: hidden;
+    background-image: url(./Images/flag.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
     height: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
 }
 
 #farris-wheel {
     height: 100%;
-    background-image: url(../Australia/Images/farrisWheel.jpeg);
-    background-size: cover;
+    background-image: url(./Images/farrisWheel.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #cube {
     height: 100%;
-    background-image: url(../Australia/Images/cube.jpeg);
-    background-size: cover;
+    background-image: url(./Images/cube.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #perth {
     height: 100%;
-    background-image: url(../Australia/Images/perth.jpeg);
-    background-size: cover;
+    background-image: url(./Images/perth.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #view {
     height: 100%;
-    background-image: url(../Australia/Images/view.jpeg);
-    background-size: cover;
+    background-image: url(./Images/view.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #harbour-bridge {
     height: 100%;
-    background-image: url(../Australia/Images/harbourBridge.jpeg);
-    background-size: cover;
+    background-image: url(./Images/harbourBridge.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #flower {
     height: 100%;
-    background-image: url(../Australia/Images/flower.jpeg);
-    background-size: cover;
+    background-image: url(./Images/flower.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #smiley-face {
     height: 100%;
-    background-image: url(../Australia/Images/smileFace.jpeg);
-    background-size: cover;
+    background-image: url(./Images/smileFace.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #rottnest-island {
     height: 100%;
-    background-image: url(../Australia/Images/rottnestIsland.jpeg);
-    background-size: cover;
+    background-image: url(./Images/rottnestIsland.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #koala {
     height: 100%;
-    background-image: url(../Australia/Images/koala.jpeg);
-    background-size: cover;
+    background-image: url(./Images/koala.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #opera-house {
     height: 100%;
-    background-image: url(../Australia/Images/operaHouse.jpeg);
-    background-size: cover;
+    background-image: url(./Images/operaHouse.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #tree {
     height: 100%;
-    background-image: url(../Australia/Images/tree.jpeg);
-    background-size: cover;
+    background-image: url(./Images/tree.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 #flower {
     height: 100%;
-    background-image: url(../Australia/Images/flower.jpeg);
-    background-size: cover;
+    background-image: url(./Images/flower.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
+/* Responsive Section */
+
 @media (min-width: 768px) {
-    main {
-        min-width: 768px;
-    }
-    
     .sub-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        
     }
 
     .sub-container div {
-        flex-basis: 50%;
-        max-width: 100%;
-        min-width: 384px;
-        background-size: cover;
-        height: fit-content;
+        margin-bottom: 5px;
+        flex-basis: 48%;
+
     }
 }
